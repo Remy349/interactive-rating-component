@@ -1,6 +1,126 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+$overpass: 'Overpass', sans-serif;
+
+/* COLORS */
+
+/* -> Primary */
+$orange: hsl(25,97%,53%);
+/* -> Neutral */
+$white: hsl(0,0%,100%);
+$light-grey: hsl(217,12%,63%);
+$medium-grey: hsl(216,12%,54%);
+$dark-blue: hsl(213,19%,18%);
+$very-dark-blue: hsl(216,12%,8%);
+$rating-circles: hsl(213,20%,25%);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $very-dark-blue;
+  font-family: $overpass;
+}
+
+button { font-family: inherit; }
+
+.main { overflow-x: hidden; }
+
+/* RATING CARD */
+.rating {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 375px;
+  }
+
+  &__card {
+    background-color: $dark-blue;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: grid;
+    row-gap: 1.5rem;
+
+    &-icon {
+      &_container {
+        width: 2.9rem;
+        height: 2.9rem;
+        border-radius: 50%;
+        background-color: $rating-circles;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &-title {
+      color: $white;
+      font-size: 1.5rem;
+      margin-bottom: -1rem;
+    }
+
+    &-desc {
+      color: $medium-grey;
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    &-rate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &_btn {
+        font-weight: 700;
+        color: $medium-grey;
+        background-color: $rating-circles;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.9rem;
+        width: 2.9rem;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &:hover {
+          color: $white;
+          background-color: $light-grey;
+        }
+      }
+    }
+
+    &-btns {
+      &_submit {
+        background-color: $orange;
+        color: $white;
+        width: 100%;
+        padding: .8rem 0;
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: .9rem;
+        letter-spacing: .1rem;
+
+        &:hover {
+          background-color: $white;
+          color: $orange;
+        }
+      }
+    }
+  }
 }
 
