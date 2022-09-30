@@ -34,6 +34,39 @@ button {
   margin-right: auto;
   max-width: 375px;
 }
+.rating__answer {
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 2rem 1.5rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.rating__answer-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.rating__answer-number {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.rating__answer-number_text {
+  background-color: hsl(213deg, 20%, 25%);
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+.rating__answer-title {
+  font-size: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.rating__answer-desc {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
 .rating__card {
   background-color: hsl(213deg, 19%, 18%);
   padding: 2rem;

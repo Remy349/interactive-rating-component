@@ -43,6 +43,45 @@ button { font-family: inherit; }
     max-width: 375px;
   }
 
+  &__answer {
+    background-color: $dark-blue;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+
+    &-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    &-number {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      &_text {
+        background-color: $rating-circles;
+        color: $orange;
+        padding: .3rem 1rem;
+        border-radius: 1rem;
+        font-size: .9rem;
+      }
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      color: $white;
+      margin-bottom: 1rem;
+    }
+
+    &-desc {
+      color: $medium-grey;
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+  }
+
   &__card {
     background-color: $dark-blue;
     padding: 2rem;
