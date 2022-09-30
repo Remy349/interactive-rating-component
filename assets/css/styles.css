@@ -39,6 +39,7 @@ button {
   padding: 2rem 1.5rem;
   border-radius: 2rem;
   text-align: center;
+  display: none;
 }
 .rating__answer-image {
   display: flex;
@@ -133,6 +134,11 @@ button {
 .rating__card-btns_submit:hover {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
+}
+
+.change-rating-btn {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */

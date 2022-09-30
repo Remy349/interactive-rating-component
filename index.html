@@ -15,7 +15,7 @@
   <main class="main">
     <section class="rating">
       <div class="rating__container">
-        <div class="rating__card">
+        <div class="rating__card" id="ratingCard">
           <div class="rating__card-icon">
             <div class="rating__card-icon_container">
               <img
@@ -41,12 +41,12 @@
             <button class="rating__card-rate_btn">5</button>
           </div>
           <div class="rating__card-btns">
-            <button class="rating__card-btns_submit">
+            <button class="rating__card-btns_submit" id="btnSubmit">
               SUBMIT
             </button>
           </div>
         </div>
-        <div class="rating__answer">
+        <div class="rating__answer" id="ratingAnswer">
           <div class="rating__answer-image">
             <img
               class="rating__answer-image_img"
@@ -56,7 +56,7 @@
           </div>
           <div class="rating__answer-number">
             <p class="rating__answer-number_text">
-              You selected 4 out of 5
+              You selected <span id="number">5</span> out of 5
             </p>
           </div>
           <h3 class="rating__answer-title">

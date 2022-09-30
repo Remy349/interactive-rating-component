@@ -48,6 +48,7 @@ button { font-family: inherit; }
     padding: 2rem 1.5rem;
     border-radius: 2rem;
     text-align: center;
+    display: none;
 
     &-image {
       display: flex;
@@ -161,5 +162,10 @@ button { font-family: inherit; }
       }
     }
   }
+}
+
+.change-rating-btn {
+  background-color: $orange;
+  color: $white;
 }
 
