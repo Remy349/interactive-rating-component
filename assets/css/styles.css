@@ -141,4 +141,27 @@ button {
   color: hsl(0deg, 0%, 100%);
 }
 
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 400px) {
+  .rating__container {
+    max-width: 330px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .rating__container {
+    max-width: 300px;
+  }
+  .rating__card-rate {
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .rating__container {
+    max-width: 260px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

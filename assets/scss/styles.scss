@@ -169,3 +169,31 @@ button { font-family: inherit; }
   color: $white;
 }
 
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 400px) {
+  .rating {
+    &__container { max-width: 330px; }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .rating {
+    &__container { max-width: 300px; }
+
+    &__card {
+      &-rate {
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .rating {
+    &__container { max-width: 260px; }
+  }
+}
+
